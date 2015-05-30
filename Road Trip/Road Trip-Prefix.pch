@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'Road Trip' target in the 'Road Trip' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
+
+#import <iTunesLibrary/ITLibrary.h>
+#import <iTunesLibrary/ITLibAlbum.h>
+#import <iTunesLibrary/ITLibArtist.h>
+#import <iTunesLibrary/ITLibArtwork.h>
+#import <iTunesLibrary/ITLibMediaItem.h>
+#import <iTunesLibrary/ITLibPlaylist.h>
+
+#import "ITLibPlaylist+Additions.h"
+
+#import "RTAppDelegate.h"
+
+#import <CocoaLumberJack/DDLog.h>
+#import <CocoaLumberJack/DDTTYLogger.h>
+#import <CocoaLumberJack/DDASLLogger.h>
+#import <CocoaLumberJack/DDFileLogger.h>
+#import "PCFileFunctionLevelFormatter.h"
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_DEBUG;
+#else
+static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif

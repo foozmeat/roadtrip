@@ -1,0 +1,23 @@
+PODS:
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions (= 1.8.1)
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - DCOAboutWindow (0.0.1):
+    - DCOTransparentScroller
+  - DCOTransparentScroller (0.0.1)
+  - MASPreferences (1.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 1.8)
+  - DCOAboutWindow
+  - MASPreferences (~> 1.1)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 555162681b9c20a271909b235c43f6bbd5d512e1
+  DCOAboutWindow: c6b5e3583d8b2165e75ea474c63c605a0ef55115
+  DCOTransparentScroller: 6e3560d055886381d98849981c7e52f103e9b0be
+  MASPreferences: fd8927826876acb095c78ca3f858818463ffdc30
+
+COCOAPODS: 0.37.2

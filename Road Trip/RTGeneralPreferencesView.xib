@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1070" defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RTGeneralPreferencesViewController">
+            <connections>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-ce-EJW">
+                    <rect key="frame" x="196" y="98" width="178" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Export unchecked tracks" bezelStyle="regularSquare" imagePosition="left" inset="2" id="9X1-p4-Fw1">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="ibu-as-8cT" name="value" keyPath="values.exportUncheckedTracks" id="1Vf-em-69s"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJ1-8Y-bB8">
+                    <rect key="frame" x="196" y="78" width="134" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Export music files" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cKY-1K-yu4">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="ibu-as-8cT" name="value" keyPath="values.copyMusicFiles" id="1zo-EM-rte"/>
+                    </connections>
+                </button>
+                <button identifier="Convert Music" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="si1-80-H9S">
+                    <rect key="frame" x="196" y="58" width="191" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Convert music files to MP3" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TJp-pH-XJf">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="ibu-as-8cT" name="value" keyPath="values.convertFiles" id="fJY-KH-KWg"/>
+                        <binding destination="ibu-as-8cT" name="enabled" keyPath="values.copyMusicFiles" id="g60-Kp-sGJ"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOF-J3-4tO">
+                    <rect key="frame" x="197" y="38" width="133" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Include album art" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e7E-ej-XvM">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="ibu-as-8cT" name="enabled" keyPath="values.copyMusicFiles" id="zbp-kx-H0v"/>
+                        <binding destination="ibu-as-8cT" name="value" keyPath="values.embedAlbumArt" id="NfQ-k4-UXO"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-ab-Hqj">
+                    <rect key="frame" x="197" y="18" width="206" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Resize album art to 400x400" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2ck-SV-o0c">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="ibu-as-8cT" name="enabled2" keyPath="values.copyMusicFiles" previousBinding="u7w-Nd-4dP" id="bUm-Vf-BLw">
+                            <dictionary key="options">
+                                <integer key="NSNotApplicablePlaceholder" value="-1"/>
+                                <integer key="NSNoSelectionPlaceholder" value="-1"/>
+                                <integer key="NSNullPlaceholder" value="-1"/>
+                                <integer key="NSMultipleValuesPlaceholder" value="-1"/>
+                            </dictionary>
+                        </binding>
+                        <binding destination="ibu-as-8cT" name="enabled" keyPath="values.embedAlbumArt" id="u7w-Nd-4dP"/>
+                        <binding destination="ibu-as-8cT" name="value" keyPath="values.resizeAlbumArt" id="key-gl-jKK"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-nS-mgI">
+                    <rect key="frame" x="106" y="99" width="86" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="From iTunes:" id="bRi-gZ-z5n">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="ibu-as-8cT"/>
+    </objects>
+</document>

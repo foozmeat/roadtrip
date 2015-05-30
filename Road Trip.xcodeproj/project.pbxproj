@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0EE8E517B05755008D6603 /* RTPlaylistWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EE8E417B05755008D6603 /* RTPlaylistWriter.m */; };
+		1A0EE8E817B06858008D6603 /* ITLibPlaylist+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EE8E717B06858008D6603 /* ITLibPlaylist+Additions.m */; };
+		1A1E7826183BCFB90039DE62 /* ffmpeg.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E7825183BCFB90039DE62 /* ffmpeg.entitlements */; };
+		1A1FCF5217A9B9E1001DA098 /* RTOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1FCF5117A9B9E1001DA098 /* RTOutlineView.m */; };
+		1A27B5E11805BA220087695D /* NSImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27B5E01805BA220087695D /* NSImage+Additions.m */; };
+		1A459D5C17E137D100CD4C6A /* RTGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A459D5A17E137D100CD4C6A /* RTGeneralPreferencesViewController.m */; };
+		1A459D5D17E137D100CD4C6A /* RTGeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A459D5B17E137D100CD4C6A /* RTGeneralPreferencesView.xib */; };
+		1A57578017A72BFA000C92B0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57577F17A72BFA000C92B0 /* Cocoa.framework */; };
+		1A57578A17A72BFA000C92B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A57578817A72BFA000C92B0 /* InfoPlist.strings */; };
+		1A57578C17A72BFA000C92B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A57578B17A72BFA000C92B0 /* main.m */; };
+		1A57579317A72BFA000C92B0 /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A57579217A72BFA000C92B0 /* RTAppDelegate.m */; };
+		1A57579617A72BFA000C92B0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A57579417A72BFA000C92B0 /* MainMenu.xib */; };
+		1A57579E17A72C5B000C92B0 /* iTunesLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57579D17A72C5B000C92B0 /* iTunesLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1A5757A117A72CCA000C92B0 /* RTPlaylistOutlineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5757A017A72CC5000C92B0 /* RTPlaylistOutlineManager.m */; };
+		1A5757AC17A73A21000C92B0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5757AB17A73A21000C92B0 /* MainWindow.xib */; };
+		1A5C64671842823200F3E8AA /* RTMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C64661842823200F3E8AA /* RTMediaManager.m */; };
+		1A689EDF1916EEE70076B1D8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A689EDE1916EEE70076B1D8 /* Credits.rtf */; };
+		1A689EE41916F8150076B1D8 /* PCFileFunctionLevelFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A689EE31916F8150076B1D8 /* PCFileFunctionLevelFormatter.m */; };
+		1A6A344417E52A4000FB4DC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A344317E52A4000FB4DC8 /* Images.xcassets */; };
+		1A6E07C71806EF330038C5A1 /* RTWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E07C61806EF330038C5A1 /* RTWriter.m */; };
+		1A92ED381808891600D3E134 /* ffmpeg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A92ED281808885700D3E134 /* ffmpeg */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1AA95EC9180B51240000068C /* RTGRidImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA95EC8180B51240000068C /* RTGRidImage.m */; };
+		1AA9C80017AC0E3E005AFB57 /* RTConversionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9C7FF17AC0E3E005AFB57 /* RTConversionManager.m */; };
+		1AAAF30318130293002768F8 /* RTMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5757A317A72ED3000C92B0 /* RTMainWindowController.m */; };
+		1ACC1FEA1814E3CF004ACE3E /* PlayTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC1FE71814E3CF004ACE3E /* PlayTemplate.pdf */; };
+		1ACC1FEB1814E3CF004ACE3E /* ReloadTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC1FE81814E3CF004ACE3E /* ReloadTemplate.pdf */; };
+		1ACC1FEC1814E3CF004ACE3E /* StopTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC1FE91814E3CF004ACE3E /* StopTemplate.pdf */; };
+		1AF1871A17DD033800AD4BA6 /* RTFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1871917DD033800AD4BA6 /* RTFileWriter.m */; };
+		1AF47F9C1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF47F9B1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.m */; };
+		1AF47FA01881FDCB00FB42F0 /* RTPlaylistPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF47F9F1881FDCB00FB42F0 /* RTPlaylistPreferencesView.xib */; };
+		1AF47FA318833B4A00FB42F0 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF47FA218833B4A00FB42F0 /* NSMutableArray+Shuffling.m */; };
+		7199EB2615BA437E8878E007 /* libPods-Road Trip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70466FFFBC8D4917BADCC3A9 /* libPods-Road Trip.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A92ED371808890D00D3E134 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				1A92ED381808891600D3E134 /* ffmpeg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0EE8E317B05755008D6603 /* RTPlaylistWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPlaylistWriter.h; sourceTree = "<group>"; };
+		1A0EE8E417B05755008D6603 /* RTPlaylistWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPlaylistWriter.m; sourceTree = "<group>"; };
+		1A0EE8E617B06857008D6603 /* ITLibPlaylist+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ITLibPlaylist+Additions.h"; sourceTree = "<group>"; };
+		1A0EE8E717B06858008D6603 /* ITLibPlaylist+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ITLibPlaylist+Additions.m"; sourceTree = "<group>"; };
+		1A1E7825183BCFB90039DE62 /* ffmpeg.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ffmpeg.entitlements; sourceTree = "<group>"; };
+		1A1FCF5017A9B9E1001DA098 /* RTOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTOutlineView.h; sourceTree = "<group>"; };
+		1A1FCF5117A9B9E1001DA098 /* RTOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTOutlineView.m; sourceTree = "<group>"; };
+		1A27B5DE1805B1C30087695D /* ffmpeg_commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffmpeg_commands.txt; sourceTree = "<group>"; };
+		1A27B5DF1805BA220087695D /* NSImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Additions.h"; sourceTree = "<group>"; };
+		1A27B5E01805BA220087695D /* NSImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Additions.m"; sourceTree = "<group>"; };
+		1A459D5917E137D100CD4C6A /* RTGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGeneralPreferencesViewController.h; sourceTree = "<group>"; };
+		1A459D5A17E137D100CD4C6A /* RTGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		1A459D5B17E137D100CD4C6A /* RTGeneralPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTGeneralPreferencesView.xib; sourceTree = "<group>"; };
+		1A57577C17A72BFA000C92B0 /* Road Trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Trip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A57577F17A72BFA000C92B0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A57578217A72BFA000C92B0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A57578417A72BFA000C92B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A57578717A72BFA000C92B0 /* Road Trip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Road Trip-Info.plist"; sourceTree = "<group>"; };
+		1A57578917A72BFA000C92B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A57578B17A72BFA000C92B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A57578D17A72BFA000C92B0 /* Road Trip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Road Trip-Prefix.pch"; sourceTree = "<group>"; };
+		1A57579117A72BFA000C92B0 /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		1A57579217A72BFA000C92B0 /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		1A57579517A72BFA000C92B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1A57579C17A72C3B000C92B0 /* Road Trip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Road Trip.entitlements"; sourceTree = "<group>"; };
+		1A57579D17A72C5B000C92B0 /* iTunesLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTunesLibrary.framework; path = /Library/Frameworks/iTunesLibrary.framework; sourceTree = "<absolute>"; };
+		1A57579F17A72CC5000C92B0 /* RTPlaylistOutlineManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPlaylistOutlineManager.h; sourceTree = "<group>"; };
+		1A5757A017A72CC5000C92B0 /* RTPlaylistOutlineManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPlaylistOutlineManager.m; sourceTree = "<group>"; };
+		1A5757A217A72ED3000C92B0 /* RTMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMainWindowController.h; sourceTree = "<group>"; };
+		1A5757A317A72ED3000C92B0 /* RTMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMainWindowController.m; sourceTree = "<group>"; };
+		1A5757AB17A73A21000C92B0 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1A5C64651842823200F3E8AA /* RTMediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMediaManager.h; sourceTree = "<group>"; };
+		1A5C64661842823200F3E8AA /* RTMediaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMediaManager.m; sourceTree = "<group>"; };
+		1A6663B217D1134D00E9CC65 /* complete.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = complete.aif; sourceTree = "<group>"; };
+		1A689EDE1916EEE70076B1D8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		1A689EE21916F8150076B1D8 /* PCFileFunctionLevelFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCFileFunctionLevelFormatter.h; sourceTree = "<group>"; };
+		1A689EE31916F8150076B1D8 /* PCFileFunctionLevelFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCFileFunctionLevelFormatter.m; sourceTree = "<group>"; };
+		1A6A344317E52A4000FB4DC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A6E07C51806EF330038C5A1 /* RTWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTWriter.h; sourceTree = "<group>"; };
+		1A6E07C61806EF330038C5A1 /* RTWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTWriter.m; sourceTree = "<group>"; };
+		1A92ED281808885700D3E134 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
+		1AA95EC7180B51240000068C /* RTGRidImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGRidImage.h; sourceTree = "<group>"; };
+		1AA95EC8180B51240000068C /* RTGRidImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGRidImage.m; sourceTree = "<group>"; };
+		1AA9C7FE17AC0E3E005AFB57 /* RTConversionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTConversionManager.h; sourceTree = "<group>"; };
+		1AA9C7FF17AC0E3E005AFB57 /* RTConversionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTConversionManager.m; sourceTree = "<group>"; };
+		1AC39B7D18085498004D2D37 /* build_FFmpeg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_FFmpeg.sh; sourceTree = SOURCE_ROOT; };
+		1ACC1FE71814E3CF004ACE3E /* PlayTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PlayTemplate.pdf; sourceTree = "<group>"; };
+		1ACC1FE81814E3CF004ACE3E /* ReloadTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ReloadTemplate.pdf; sourceTree = "<group>"; };
+		1ACC1FE91814E3CF004ACE3E /* StopTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = StopTemplate.pdf; sourceTree = "<group>"; };
+		1AD8DEFA17E3BAB60023356F /* NSSound+AlertAudioAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSound+AlertAudioAdditions.h"; sourceTree = "<group>"; };
+		1AD8DEFB17E3BAB60023356F /* NSSound+AlertAudioAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSound+AlertAudioAdditions.m"; sourceTree = "<group>"; };
+		1AD8DEFE17E3BB8C0023356F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1AF1871817DD033800AD4BA6 /* RTFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFileWriter.h; sourceTree = "<group>"; };
+		1AF1871917DD033800AD4BA6 /* RTFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFileWriter.m; sourceTree = "<group>"; };
+		1AF47F9A1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPlaylistPreferencesViewController.h; sourceTree = "<group>"; };
+		1AF47F9B1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPlaylistPreferencesViewController.m; sourceTree = "<group>"; };
+		1AF47F9F1881FDCB00FB42F0 /* RTPlaylistPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTPlaylistPreferencesView.xib; sourceTree = "<group>"; };
+		1AF47FA118833B4A00FB42F0 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		1AF47FA218833B4A00FB42F0 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		2726C014102909B457063BF7 /* Pods-Road Trip.releasemacappstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Trip.releasemacappstore.xcconfig"; path = "Pods/Target Support Files/Pods-Road Trip/Pods-Road Trip.releasemacappstore.xcconfig"; sourceTree = "<group>"; };
+		70466FFFBC8D4917BADCC3A9 /* libPods-Road Trip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Road Trip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CF42340ADB8394D079C501 /* Pods-Road Trip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Trip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Road Trip/Pods-Road Trip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A57577917A72BFA000C92B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A57579E17A72C5B000C92B0 /* iTunesLibrary.framework in Frameworks */,
+				1A57578017A72BFA000C92B0 /* Cocoa.framework in Frameworks */,
+				7199EB2615BA437E8878E007 /* libPods-Road Trip.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A459D5817E137A200CD4C6A /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				1A459D5917E137D100CD4C6A /* RTGeneralPreferencesViewController.h */,
+				1A459D5A17E137D100CD4C6A /* RTGeneralPreferencesViewController.m */,
+				1A459D5B17E137D100CD4C6A /* RTGeneralPreferencesView.xib */,
+				1AF47F9A1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.h */,
+				1AF47F9B1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.m */,
+				1AF47F9F1881FDCB00FB42F0 /* RTPlaylistPreferencesView.xib */,
+			);
+			name = Prefs;
+			sourceTree = "<group>";
+		};
+		1A57577317A72BFA000C92B0 = {
+			isa = PBXGroup;
+			children = (
+				1A57578517A72BFA000C92B0 /* Road Trip */,
+				1A57577E17A72BFA000C92B0 /* Frameworks */,
+				1A57577D17A72BFA000C92B0 /* Products */,
+				9F1BDB5866AA194F42F4B98B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1A57577D17A72BFA000C92B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A57577C17A72BFA000C92B0 /* Road Trip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A57577E17A72BFA000C92B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8DEFE17E3BB8C0023356F /* CoreAudio.framework */,
+				1A57579D17A72C5B000C92B0 /* iTunesLibrary.framework */,
+				1A57577F17A72BFA000C92B0 /* Cocoa.framework */,
+				1A57578217A72BFA000C92B0 /* AppKit.framework */,
+				1A57578417A72BFA000C92B0 /* Foundation.framework */,
+				70466FFFBC8D4917BADCC3A9 /* libPods-Road Trip.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A57578517A72BFA000C92B0 /* Road Trip */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8187517C1CC5C0003121B /* UI */,
+				1AA9C7FE17AC0E3E005AFB57 /* RTConversionManager.h */,
+				1AA9C7FF17AC0E3E005AFB57 /* RTConversionManager.m */,
+				1A5C64651842823200F3E8AA /* RTMediaManager.h */,
+				1A5C64661842823200F3E8AA /* RTMediaManager.m */,
+				1A6E07C81806EFBE0038C5A1 /* Writers */,
+				1A459D5817E137A200CD4C6A /* Prefs */,
+				1A57578617A72BFA000C92B0 /* Supporting Files */,
+				1AD8DEFD17E3BAC70023356F /* Categories */,
+				1A27B5DE1805B1C30087695D /* ffmpeg_commands.txt */,
+				1AC39B7D18085498004D2D37 /* build_FFmpeg.sh */,
+			);
+			path = "Road Trip";
+			sourceTree = "<group>";
+		};
+		1A57578617A72BFA000C92B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A689EE21916F8150076B1D8 /* PCFileFunctionLevelFormatter.h */,
+				1A689EE31916F8150076B1D8 /* PCFileFunctionLevelFormatter.m */,
+				1ACC1FE41814DE2E004ACE3E /* images */,
+				1A92ED281808885700D3E134 /* ffmpeg */,
+				1A6A344317E52A4000FB4DC8 /* Images.xcassets */,
+				1A6663B217D1134D00E9CC65 /* complete.aif */,
+				1A57579C17A72C3B000C92B0 /* Road Trip.entitlements */,
+				1A1E7825183BCFB90039DE62 /* ffmpeg.entitlements */,
+				1A57578717A72BFA000C92B0 /* Road Trip-Info.plist */,
+				1A57578817A72BFA000C92B0 /* InfoPlist.strings */,
+				1A57578B17A72BFA000C92B0 /* main.m */,
+				1A57578D17A72BFA000C92B0 /* Road Trip-Prefix.pch */,
+				1A689EDE1916EEE70076B1D8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A6E07C81806EFBE0038C5A1 /* Writers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EE8E317B05755008D6603 /* RTPlaylistWriter.h */,
+				1A0EE8E417B05755008D6603 /* RTPlaylistWriter.m */,
+				1AF1871817DD033800AD4BA6 /* RTFileWriter.h */,
+				1AF1871917DD033800AD4BA6 /* RTFileWriter.m */,
+				1A6E07C51806EF330038C5A1 /* RTWriter.h */,
+				1A6E07C61806EF330038C5A1 /* RTWriter.m */,
+			);
+			name = Writers;
+			sourceTree = "<group>";
+		};
+		1ACC1FE41814DE2E004ACE3E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC1FE71814E3CF004ACE3E /* PlayTemplate.pdf */,
+				1ACC1FE81814E3CF004ACE3E /* ReloadTemplate.pdf */,
+				1ACC1FE91814E3CF004ACE3E /* StopTemplate.pdf */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1AD8DEFD17E3BAC70023356F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1A0EE8E617B06857008D6603 /* ITLibPlaylist+Additions.h */,
+				1A0EE8E717B06858008D6603 /* ITLibPlaylist+Additions.m */,
+				1AD8DEFA17E3BAB60023356F /* NSSound+AlertAudioAdditions.h */,
+				1AD8DEFB17E3BAB60023356F /* NSSound+AlertAudioAdditions.m */,
+				1A27B5DF1805BA220087695D /* NSImage+Additions.h */,
+				1A27B5E01805BA220087695D /* NSImage+Additions.m */,
+				1AF47FA118833B4A00FB42F0 /* NSMutableArray+Shuffling.h */,
+				1AF47FA218833B4A00FB42F0 /* NSMutableArray+Shuffling.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1AF8187517C1CC5C0003121B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1A5757AB17A73A21000C92B0 /* MainWindow.xib */,
+				1A57579417A72BFA000C92B0 /* MainMenu.xib */,
+				1A57579117A72BFA000C92B0 /* RTAppDelegate.h */,
+				1A57579217A72BFA000C92B0 /* RTAppDelegate.m */,
+				1A5757A217A72ED3000C92B0 /* RTMainWindowController.h */,
+				1A5757A317A72ED3000C92B0 /* RTMainWindowController.m */,
+				1A1FCF5017A9B9E1001DA098 /* RTOutlineView.h */,
+				1A1FCF5117A9B9E1001DA098 /* RTOutlineView.m */,
+				1A57579F17A72CC5000C92B0 /* RTPlaylistOutlineManager.h */,
+				1A5757A017A72CC5000C92B0 /* RTPlaylistOutlineManager.m */,
+				1AA95EC7180B51240000068C /* RTGRidImage.h */,
+				1AA95EC8180B51240000068C /* RTGRidImage.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9F1BDB5866AA194F42F4B98B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF42340ADB8394D079C501 /* Pods-Road Trip.debug.xcconfig */,
+				2726C014102909B457063BF7 /* Pods-Road Trip.releasemacappstore.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A57577B17A72BFA000C92B0 /* Road Trip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A57579917A72BFA000C92B0 /* Build configuration list for PBXNativeTarget "Road Trip" */;
+			buildPhases = (
+				E342E3A0382F4A1686966828 /* Check Pods Manifest.lock */,
+				1A57577817A72BFA000C92B0 /* Sources */,
+				1A57577917A72BFA000C92B0 /* Frameworks */,
+				1A57577A17A72BFA000C92B0 /* Resources */,
+				1A92ED371808890D00D3E134 /* CopyFiles */,
+				AE40FF13F135497D967B1A6F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Road Trip";
+			productName = "Road Trip";
+			productReference = 1A57577C17A72BFA000C92B0 /* Road Trip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A57577417A72BFA000C92B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "James Moore";
+			};
+			buildConfigurationList = 1A57577717A72BFA000C92B0 /* Build configuration list for PBXProject "Road Trip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A57577317A72BFA000C92B0;
+			productRefGroup = 1A57577D17A72BFA000C92B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A57577B17A72BFA000C92B0 /* Road Trip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A57577A17A72BFA000C92B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A57578A17A72BFA000C92B0 /* InfoPlist.strings in Resources */,
+				1A6A344417E52A4000FB4DC8 /* Images.xcassets in Resources */,
+				1A1E7826183BCFB90039DE62 /* ffmpeg.entitlements in Resources */,
+				1ACC1FEC1814E3CF004ACE3E /* StopTemplate.pdf in Resources */,
+				1A57579617A72BFA000C92B0 /* MainMenu.xib in Resources */,
+				1A5757AC17A73A21000C92B0 /* MainWindow.xib in Resources */,
+				1A689EDF1916EEE70076B1D8 /* Credits.rtf in Resources */,
+				1A459D5D17E137D100CD4C6A /* RTGeneralPreferencesView.xib in Resources */,
+				1ACC1FEA1814E3CF004ACE3E /* PlayTemplate.pdf in Resources */,
+				1ACC1FEB1814E3CF004ACE3E /* ReloadTemplate.pdf in Resources */,
+				1AF47FA01881FDCB00FB42F0 /* RTPlaylistPreferencesView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE40FF13F135497D967B1A6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Road Trip/Pods-Road Trip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E342E3A0382F4A1686966828 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A57577817A72BFA000C92B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A689EE41916F8150076B1D8 /* PCFileFunctionLevelFormatter.m in Sources */,
+				1AAAF30318130293002768F8 /* RTMainWindowController.m in Sources */,
+				1AA95EC9180B51240000068C /* RTGRidImage.m in Sources */,
+				1A57578C17A72BFA000C92B0 /* main.m in Sources */,
+				1A5C64671842823200F3E8AA /* RTMediaManager.m in Sources */,
+				1A57579317A72BFA000C92B0 /* RTAppDelegate.m in Sources */,
+				1AF47FA318833B4A00FB42F0 /* NSMutableArray+Shuffling.m in Sources */,
+				1A6E07C71806EF330038C5A1 /* RTWriter.m in Sources */,
+				1A5757A117A72CCA000C92B0 /* RTPlaylistOutlineManager.m in Sources */,
+				1A1FCF5217A9B9E1001DA098 /* RTOutlineView.m in Sources */,
+				1A27B5E11805BA220087695D /* NSImage+Additions.m in Sources */,
+				1AF47F9C1881FD1B00FB42F0 /* RTPlaylistPreferencesViewController.m in Sources */,
+				1AA9C80017AC0E3E005AFB57 /* RTConversionManager.m in Sources */,
+				1A0EE8E517B05755008D6603 /* RTPlaylistWriter.m in Sources */,
+				1A459D5C17E137D100CD4C6A /* RTGeneralPreferencesViewController.m in Sources */,
+				1A0EE8E817B06858008D6603 /* ITLibPlaylist+Additions.m in Sources */,
+				1AF1871A17DD033800AD4BA6 /* RTFileWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A57578817A72BFA000C92B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A57578917A72BFA000C92B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A57579417A72BFA000C92B0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A57579517A72BFA000C92B0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A57579717A72BFA000C92B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A57579817A72BFA000C92B0 /* ReleaseMacAppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = ReleaseMacAppStore;
+		};
+		1A57579A17A72BFA000C92B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CF42340ADB8394D079C501 /* Pods-Road Trip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = "Road Trip/Road Trip.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application: James Moore (3C6XYXB3FQ)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Road Trip/Road Trip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Road Trip/Road Trip-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A57579B17A72BFA000C92B0 /* ReleaseMacAppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2726C014102909B457063BF7 /* Pods-Road Trip.releasemacappstore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = "Road Trip/Road Trip.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application: James Moore (3C6XYXB3FQ)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Road Trip/Road Trip-Prefix.pch";
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Road Trip/Road Trip-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = ReleaseMacAppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A57577717A72BFA000C92B0 /* Build configuration list for PBXProject "Road Trip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A57579717A72BFA000C92B0 /* Debug */,
+				1A57579817A72BFA000C92B0 /* ReleaseMacAppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = ReleaseMacAppStore;
+		};
+		1A57579917A72BFA000C92B0 /* Build configuration list for PBXNativeTarget "Road Trip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A57579A17A72BFA000C92B0 /* Debug */,
+				1A57579B17A72BFA000C92B0 /* ReleaseMacAppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = ReleaseMacAppStore;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A57577417A72BFA000C92B0 /* Project object */;
+}
